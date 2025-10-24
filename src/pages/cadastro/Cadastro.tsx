@@ -1,3 +1,4 @@
+
 function Cadastro() {
   return (
     <>
@@ -60,23 +61,22 @@ function Cadastro() {
               className="border-1 border-slate-700 rounded p-2"
             />
           </div>
-          <div className="flex justify-around w-full gap-8">
-            <button
-              type='reset'
-              className='rounded text-white bg-red-400 hover:bg-red-700 w-1/2 py-2'
-            >
-              Cancelar
-            </button>
-            <button
-              type='submit'
-              className='rounded text-white bg-indigo-400
-                         hover:bg-indigo-900 w-1/2 py-2
-                         flex justify-center'
-            >
-              Cadastrar
-            </button>
-          </div>
-        </form>
+          <div className="flex flex-col items-center w-full gap-3 mt-4">
+    <button
+      type='submit'
+      className='rounded text-white bg-indigo-400 hover:bg-indigo-900 w-1/2 py-2'
+    >
+      Cadastrar
+    </button>
+    
+    <a
+  href="/login"
+  className='rounded text-blue-400 font-normal hover:underline no-underline'
+>
+  Já tem uma conta?
+</a> 
+  </div>
+</form>
       </div>
     </>
   )
